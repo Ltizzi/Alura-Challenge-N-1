@@ -54,7 +54,7 @@ function encriptar() {
     let regex = /,/g;
     solucion = sol_parcial.replace(regex, "");
     
-     if (button.type != null) {
+     if (button) {
         button.remove();
     }
     
@@ -78,7 +78,7 @@ function desencriptar() {
 
     solucion = str;
     
-     if (button.type != null) {
+     if (button) {
         button.remove();
     }
     
