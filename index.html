@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript" src="script.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    </head>
+
+    <body>
+
+        <header>
+            <img src="/assets/Logo.png" alt="logo alura">
+            <div class="firm">
+                <br>
+                <h1 class="title">Encriptador</h1>
+                <p class="subtitle">made by Ltizzi</p>
+            </div>
+           
+        </header>
+
+        <main>
+
+            <div class="main">
+
+                <section class="entrada">
+                    <textarea name="entrada" id="entrada" cols="30" rows="10"placeholder="Ingrese el texto aqui"></textarea>
+                    
+                    <p class="warning"><span class="material-symbols-outlined">
+                        warning
+                        </span> Solo letras minúsculas y sin símbolos</p>
+                    <br>
+                    <div class="btns">
+                        <button onclick="encriptar()" class="btn-encrip">Encriptar</button>
+                        <button onclick="desencriptar()" class="btn-desencrip">Desencriptar</button>
+                    </div>
+                    
+                </section>
+    
+                <aside class="costado">
+                    <img src="/assets/Muñeco.png" alt="muñeco loco">
+                    <h2 id="msg-h2">Ningún mensaje fue encontrado</h2>
+                    <p id="msg-p">Ingresa el texto que desees encriptar o desencriptar</p>
+                    <div id="btn-copy"></div>
+        
+                </aside>
+
+            </div>
+         
+        </main>
+
+       
+        
+    </body>
+</html>
