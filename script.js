@@ -1,5 +1,6 @@
 let solucion;
 let arraySol;
+let button;
 
 function changeDom(solucion) {
     let h2 = "Solución:";
@@ -52,8 +53,14 @@ function encriptar() {
     let sol_parcial = strArray.toString();
     let regex = /,/g;
     solucion = sol_parcial.replace(regex, "");
-
+    
+     if (button) {
+        button.remove();
+    }
+    
     changeDom(solucion);
+    
+   
 
   
     return solucion;
@@ -70,7 +77,11 @@ function desencriptar() {
     }
 
     solucion = str;
-
+    
+     if (button) {
+        button.remove();
+    }
+    
     changeDom(solucion);
 
     return solucion;
