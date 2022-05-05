@@ -19,6 +19,10 @@ function entradaToString() {
 }
 
 function botonCopy() {
+        
+         if(document.querySelector('.btn-copy')) {
+            document.querySelector('.btn-copy').remove();
+        }
     
         let button = document.createElement('button');
         button.type = 'button';
